@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    grid-column: 2 / span 1;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#so {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 94px;
+    display: block;
+}
+
+#en {
+    color: #343234;
+    font-family: "Poppins";
+    font-size: 94px;
+    display: block;
+}
+
+
+#Heading {
+    line-height: 0.9;
+    font-weight: bold;
+}
+
+#text {
+    padding: 2px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #998F8F;
+}
+
+#box {
+    display: flex;
+    /* Enables flexbox layout */
+    flex-direction: row;
+    /* Aligns items in a row */
+    gap: 20px;
+    /* Adds space between the boxes */
+    justify-content: start;
+    /* Aligns items at the start */
+    align-items: center;
+    /* Centers items vertically */
+}
+
+#box1 {
+    width: 190px;
+    height: 220px;
+
+}
+
+#box2 {
+    width: 280px;
+    height: 220px;
+
+}
+
+#box1,
+#box2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#box1 {
+    background-color: #F46D39;
+}
+
+#box2 {
+    background-color: #C4FF40;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    /* Position arrow inside the box at the bottom */
+    right: 15px;
+    /* Align arrow to the right */
+    font-size: 18px;
+
+    text-decoration: none;
+
+}
+
+#arrow1 {
+    background-color: #F46D39;
+    border: solid white 0.5px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+
+}
+
+#arrow2 {
+    background-color: #C4FF40;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+#arrow1:hover {
+    color: #F46D39;
+    background-color: white;
+    /* box-shadow: 2px 2px 1px rgb(24, 24, 24); */
+}
+
+#arrow2:hover {
+    color: #C4FF40;
+    background-color: black;
+    /* Changes color on hover */
+}
+
+#box1 i,
+#box2 i {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 38px;
+}
+
+#box1 i {
+    display: flex;
+    color: #ffffff;
+
+    background-color: #F46D39;
+}
+
+#box2 i {
+    background-color: #C4FF40;
+    color: black;
+}
+
+#box1 {
+    background-color: #F46D39;
+}
+
+#tb1 {
+    font-family: "Poppins";
+    position: relative;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#tb2 ul {
+    list-style-type: none;
+}
+
+#tb2 a {
+    text-decoration: none;
+    color: #343234;
+
+}
+
+#tb2 li {
+    padding: 4px;
+}
+
+#tb2 li:hover {
+    color: #C4FF40;
+    border: black solid 1px;
+    background-color: #343234;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+#tb2 {
+
+    font-family: "Poppins";
+    color: #343234;
+    font-size: 1.8em;
+    position: relative;
+    margin-right: auto;
+    /* text-align: center; */
+    margin-top: 8px;
+
+}
+
+.framer-link {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 250px;
+}
+
+.framer-icon {
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 3%;
+}
+
+/* .framer-background {
+    position: absolute;
+    border-radius: inherit;
+    inset: 0;
+} */
+
+.framer-background img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.framer-content {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+}
+
+.framer-title {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+}
+
+.framer-heading {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Poppins";
+    padding-left: 9px;
+
+}
+
+.framer-link:hover {
+    background-color: #343234;
+}
+
+.lets-work-together {
+    background-color: #151312;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lets-work-together #Heading {
+    font-size: 1vh;
+    /* Ensure text size fits within 1vh */
+    color: #fff;
+    /* Maintain white text for visibility */
+
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #343234;
+    color: #fff;
+}
+
+.contact-form select option {
+    color: #343234;
+    background-color: #8e8a8e;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 20px;
+}
+
+.contact-form button {
+    background-color: #f46c38;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d55828;
+}
+
+
+.name {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+img {
+    border-radius: 20px;
+}
+
+sidebar h1 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin: 2px 0;
+}
+
+
+sidebar p {
+    text-align: center;
+    color: #F8F0E3;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+sidebar {
+    height: 500px;
+    width: 225px;
+    position: fixed;
+    /* Default behavior for wider screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center content */
+    color: black;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+
+    background-image: linear-gradient(30deg,
+            hsl(28deg 100% 50%) 0%,
+            hsl(23deg 99% 53%) 18%,
+            hsl(19deg 98% 55%) 26%,
+            hsl(15deg 96% 56%) 33%,
+            hsl(12deg 93% 57%) 39%,
+            hsl(7deg 90% 58%) 44%,
+            hsl(3deg 87% 58%) 50%,
+            hsl(358deg 83% 58%) 56%,
+            hsl(354deg 80% 55%) 61%,
+            hsl(349deg 77% 52%) 67%,
+            hsl(345deg 78% 49%) 74%,
+            hsl(341deg 87% 45%) 82%,
+            hsl(336deg 100% 41%) 100%);
+}
+
+
+.profile-pic {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+.icons {
+    background-color: #ECE5DD;
+    border-radius: 16px;
+
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+
+
+    box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.icons i {
+    box-sizing: border-box;
+
+    font-size: 1.5rem;
+
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    color: #000;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.icons i:hover {
+    width: 200px;
+}
+
+.sidebar-small {
+    visibility: hidden;
+}
+
+@media (max-width: 953px) {
+
+
+
+    .contact-form {
+        margin: 0 auto;
+    }
+
+    #coding_content a {
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #1a1a1a;
+        display: block;
+        /* Removes grid and switches to static layout */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+        height: auto;
+        /* Allow content to determine the height */
+    }
+
+    .sidebar {
+        margin: 0 auto;
+        position: static;
+        /* Make the sidebar flow with the content */
+        width: 70%;
+        /* Full width for better stacking */
+        margin-bottom: 20px;
+        /* Add spacing below the sidebar */
+        height: auto;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .icons i,
+    .fa-x-twitter,
+    .fa-linkedin,
+    .fa-instagram,
+    .fa-whatsapp {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        transition: none;
+    }
+
+    .icons i:hover {
+        width: 60px;
+    }
+
+
+
+
+    .main-content {
+        width: 100%;
+        /* Ensure it takes full width */
+        margin-bottom: 20px;
+        /* Add spacing below */
+    }
+
+    #box {
+        flex-direction: column;
+        /* Stack the boxes vertically */
+        gap: 20px;
+        /* Add spacing between stacked boxes */
+    }
+
+    #box1,
+    #box2 {
+        width: 100%;
+        /* Make the boxes span the full width */
+        height: auto;
+        /* Adjust height dynamically */
+    }
+
+    .boxes {
+        display: block;
+        /* Stack boxes statically */
+        width: 100%;
+        /* Full width for stacked layout */
+    }
+
+    #so,
+    #en {
+        text-align: center;
+        font-size: 4.5em;
+
+    }
+
+
+    #box1 {
+
+        height: 200px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+    }
+
+    sidebar {
+        grid-row: 1;
+    }
+
+    #Heading,
+    #text {
+        grid-column: 1;
+    }
+
+    #box1,
+    #box2 {
+        grid-column: 1;
+    }
+}
+
+.fa-x-twitter,
+.fa-linkedin,
+.fa-instagram,
+.fa-whatsapp {
+    color: white;
+    flex: none;
+    font-size: 24px;
+
+    display: block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    text-decoration: none;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+
+
+
+.icon-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.icon-insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.fa-instagram:hover {
+    background-color: #FF007F;
+    color: white;
+}
+
+.fa-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+
+.fa-x-twitter:hover {
+    background: #14171A;
+    color: white;
+
+}
+
+.fa-linkedin:hover {
+    background: #0077B5;
+    color: white;
+
+}
+
+
+.icon-x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    grid-row: 3;
+    grid-column: 2;
+}
