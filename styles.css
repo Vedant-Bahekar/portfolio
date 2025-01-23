@@ -61,15 +61,10 @@ body {
 
 #box {
     display: flex;
-    /* Enables flexbox layout */
     flex-direction: row;
-    /* Aligns items in a row */
     gap: 20px;
-    /* Adds space between the boxes */
     justify-content: start;
-    /* Aligns items at the start */
     align-items: center;
-    /* Centers items vertically */
 }
 
 #box1 {
@@ -110,9 +105,7 @@ body {
 .arrow {
     position: absolute;
     bottom: 10px;
-    /* Position arrow inside the box at the bottom */
     right: 15px;
-    /* Align arrow to the right */
     font-size: 18px;
 
     text-decoration: none;
@@ -144,13 +137,11 @@ body {
 #arrow1:hover {
     color: #F46D39;
     background-color: white;
-    /* box-shadow: 2px 2px 1px rgb(24, 24, 24); */
 }
 
 #arrow2:hover {
     color: #C4FF40;
     background-color: black;
-    /* Changes color on hover */
 }
 
 #box1 i,
@@ -216,7 +207,6 @@ body {
     font-size: 1.8em;
     position: relative;
     margin-right: auto;
-    /* text-align: center; */
     margin-top: 8px;
 
 }
@@ -244,11 +234,7 @@ body {
     padding: 3%;
 }
 
-/* .framer-background {
-    position: absolute;
-    border-radius: inherit;
-    inset: 0;
-} */
+
 
 .framer-background img {
     display: block;
@@ -298,9 +284,7 @@ body {
 
 .lets-work-together #Heading {
     font-size: 1vh;
-    /* Ensure text size fits within 1vh */
     color: #fff;
-    /* Maintain white text for visibility */
 
 }
 
@@ -397,12 +381,10 @@ sidebar {
     height: 500px;
     width: 225px;
     position: fixed;
-    /* Default behavior for wider screens */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Center content */
     color: black;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -492,21 +474,15 @@ sidebar {
     body {
         background-color: #1a1a1a;
         display: block;
-        /* Removes grid and switches to static layout */
         padding: 20px;
-        /* Adjust padding for smaller screens */
         height: auto;
-        /* Allow content to determine the height */
     }
 
     .sidebar {
         margin: 0 auto;
         position: static;
-        /* Make the sidebar flow with the content */
         width: 70%;
-        /* Full width for better stacking */
         margin-bottom: 20px;
-        /* Add spacing below the sidebar */
         height: auto;
     }
 
@@ -537,31 +513,23 @@ sidebar {
 
     .main-content {
         width: 100%;
-        /* Ensure it takes full width */
         margin-bottom: 20px;
-        /* Add spacing below */
     }
 
     #box {
         flex-direction: column;
-        /* Stack the boxes vertically */
         gap: 20px;
-        /* Add spacing between stacked boxes */
     }
 
     #box1,
     #box2 {
         width: 100%;
-        /* Make the boxes span the full width */
         height: auto;
-        /* Adjust height dynamically */
     }
 
     .boxes {
         display: block;
-        /* Stack boxes statically */
         width: 100%;
-        /* Full width for stacked layout */
     }
 
     #so,
