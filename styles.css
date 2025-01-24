@@ -435,6 +435,18 @@ sidebar {
     place-items: center;
 }
 
+.icon-whatsapp i {
+    color: #25D366;
+}
+
+.icon-linkedin i {
+    color: #0077B5;
+}
+
+.icon-x i {
+    color: black;
+}
+
 .icons i {
     box-sizing: border-box;
 
@@ -443,7 +455,7 @@ sidebar {
     display: inline-block;
     height: 60px;
     width: 60px;
-    color: #000;
+
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
@@ -453,6 +465,7 @@ sidebar {
 
 .icons i:hover {
     width: 200px;
+    color: white;
 }
 
 .sidebar-small {
@@ -462,6 +475,10 @@ sidebar {
 
 
 @media (max-width: 953px) {
+
+    .icons i:hover {
+        transition: all 0.5s ease-out;
+    }
 
 
 
