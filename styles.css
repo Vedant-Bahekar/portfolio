@@ -460,7 +460,7 @@ sidebar {
     border-radius: 50px;
     box-sizing: border-box;
     line-height: 60px;
-    transition: all 0.3s ease-out;
+    transition: all 0.8s ease-out;
 }
 
 .icons i:hover {
