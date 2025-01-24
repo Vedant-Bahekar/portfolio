@@ -459,6 +459,8 @@ sidebar {
     visibility: hidden;
 }
 
+
+
 @media (max-width: 953px) {
 
 
@@ -569,6 +571,22 @@ sidebar {
     #box1,
     #box2 {
         grid-column: 1;
+    }
+}
+
+@media (max-width: 443px) {
+
+    #so,
+    #en {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 332px) {
+
+    #so,
+    #en {
+        font-size: 3em;
     }
 }
 
